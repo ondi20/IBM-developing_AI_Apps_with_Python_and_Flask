@@ -59,7 +59,7 @@ data = [
     }
 ]
 
-
+#1. Set response status code
 #create an end point that returns the person’s data to the client in JSON format.
 @app.route("/data")
 def get_data():
@@ -79,6 +79,12 @@ def get_data():
         '''
 
 #task 1
+
+
+#2. Process input arguments
+    
+    
+    #test: curl -X GET -i -w '\n' "localhost:5000/name_search?q=Abdel"
 @app.route("/name_search")
 def name_search():
     """find a person in the database
